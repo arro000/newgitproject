@@ -1,0 +1,40 @@
+<?php echo $this->doctype() ?>
+<?php 
+    // CSS
+    $this->headLink()->appendStylesheet('public/css/style.css');
+    // JS
+    $this->headScript()->appendFile('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+                        ->appendFile('/public/js/script.js')
+                        ->appendFile('//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
+                        
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--link href="public/css/style.css" rel="stylesheet" type="text/css"-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>laCCalcolatrice</title>
+  <?php echo $this->headLink(); ?>
+  <?php echo $this->headScript(); ?>
+   <script src=""></script>
+   <script src=""></script>
+</head>
+<body>
+     <div id="header-navigation" style="float: right">
+        <a href="<?php echo $this->url(
+            array('controller'=>'auth'),
+            'default',
+            true) ?>">Login</a>
+    </div>
+<div id="header" style="background-color: #ffffff; height: 30px; text-align: center;">
+    <div id="header-logo" style="float: left">
+        <b>laCCalcolatrice</b>
+    </div>
+    <div id="header-navigation" style="float: right">
+      
+    </div>
+</div>
+
+<?php echo $this->layout()->content ?>
+
+</body>
+</html>

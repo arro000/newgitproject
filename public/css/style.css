@@ -1,0 +1,56 @@
+body{
+     background-color: lightblue;
+}
+#display{
+    height: 8em;
+    width:  15em;
+    padding-left: 43%;
+    font-family: monospace ;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+    
+       
+}
+.box{
+    
+    float:left;
+    width: 50%
+     
+   
+}
+#box{
+    
+   padding-left: 40%;
+     
+   
+}
+#prod{
+   
+    float:right;
+    width: 50%
+}
+
+#box>button{
+    
+    padding-left: 47%;
+    width: 3em;
+    padding: .5em;
+    color: #ffffff;
+    font-family: monospace;
+    background-color: lightskyblue;
+    text-shadow: 1px 1px 1px black;
+    border: solid thin blue;
+   
+}
+
+button{
+    color: #ffffff;
+    font-family: monospace;
+    background-color: lightskyblue;
+    text-shadow: 1px 1px 1px black;
+    border: solid thin blue;
+}
+
+#zero{
+    width: 84px;
+}

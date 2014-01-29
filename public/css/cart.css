@@ -1,0 +1,25 @@
+/* 
+    Document   : cart
+    Created on : 28-gen-2014, 10.20.31
+    Author     : DBmedia-Marco
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#navigator { 
+    
+    background-color : gray;
+    font-family:  monospace;
+    
+}
+.dialog{
+    font-size: 12px;
+  
+       
+}
+#contentbox{
+    padding-left: 10%;
+    padding-right: 10%;
+  
+}
+

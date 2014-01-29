@@ -1,0 +1,42 @@
+<?php echo $this->doctype() ?>
+<?php 
+    // CSS
+    $this->headLink()->appendStylesheet('public/css/style.css')
+            ->appendStylesheet('http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')
+             ->appendStylesheet('public/css/cart.css');
+    //JS
+    $this->headScript()->appendFile('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+                        ->appendFile('//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js')
+                        ->appendFile('/public/js/login.js')
+                         ->appendFile('/public/js/site.js')
+                        ->appendFile('/public/js/fattura.js');
+    
+                        
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--link href="public/css/style.css" rel="stylesheet" type="text/css"-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>laCCalcolatrice</title>
+  <?php echo $this->headLink(); ?>
+  <?php echo $this->headScript(); ?>
+   <script src=""></script>
+   <script src=""></script>
+</head>
+<body>
+     <div id="header-navigation" style="float: right">
+        <button id="logout">logout</button>
+    </div>
+<div id="header" style="background-color: #ffffff; height: 30px; text-align: center;">
+    <div id="header-logo" style="float: left">
+        <b>laCCalcolatrice</b>
+    </div>
+    <div id="header-navigation" style="float: right">
+      
+    </div>
+</div>
+
+<?php echo $this->layout()->content ?>
+
+</body>
+</html>

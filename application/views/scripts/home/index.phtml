@@ -1,0 +1,60 @@
+<script>
+    $(function() {
+    $( "#prod" ).dialog({
+    autoOpen: false,
+    resizable: false,
+      show: {
+        effect: "explode",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( ".func" ).click(function() {
+      $( "#prod" ).dialog( "open" );
+    });
+ 
+  $( "#search" ).keyup(function() {
+      $( "#prod" ).dialog( "open" );
+    });
+  });
+
+    $("#canc").click(function(){
+        $("#prod").empty();
+    });
+ </script><table border="1">
+<tr>
+<td>Name</td>
+<td id="name"></td>
+</tr>
+<tr>
+<td>Role</td>
+<td id="role"></td>
+</tr>
+</table> 
+<button id="get">Get credentials</button>
+<button><a href="<?php echo $this->url(array('controller'=>'cart'),'default', true) ?>">fattura</a></button>
+
+<div class="box">insert new product<br>
+<INPUT type="text" id="nome" placeholder="nomeprodotto">
+<INPUT type="text" id="costo" placeholder="costo">
+<button id="insert" class="func"> invia</button><br>
+delete<br>
+<INPUT type="text" id="delete" placeholder="id da eliminare">
+
+<button id="del" class="func"> delete</button><br>
+
+ricerca<br>
+<INPUT type="text" id="search" placeholder="ricerca">
+
+<br>product:<br>
+<button id="getprd" class="func"> prod</button><br>
+</div>
+ <div id="prod" title="prodotti" >
+      
+ </div>
+
+  

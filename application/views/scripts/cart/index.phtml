@@ -1,0 +1,47 @@
+<div id="navigator">
+    <button id="carica">carica</button>
+    <button id="delete">delete</button>
+    <button id="new">nuova</button>
+    <button id="refresh">aggiorna</button>
+</div>
+<div id="table">
+    <table id="fatture">
+        
+    </table>
+</div>
+<div id="lista"></div>
+ <style>
+  #feedback { font-size: 1.4em; }
+  .selectable .ui-selecting { background: blue; color: white; }
+  .selectable .ui-selected { background: cornflowerblue; color: white; }
+  .selectable { list-style-type: none; margin: 0; padding: 0; }
+  
+
+  </style>
+<div id="aggiungi" class="dialog">
+    Seleziona prodotto<br>
+    <INPUT type="text" id="research" placeholder="search">
+    <div><table id="prod" border="1"><tr><td>prodotto</td><td>prezzo</td><td>id</td></tr></table></div>
+    totale:<div id="totale"></div>
+    <button id="save">save</div>
+</div>
+
+<div id="visualizza" class="dialog">
+    <div><table id="prod" border="1"><tr><td>prodotto</td><td>prezzo</td><td>id</td></tr></table></div>
+    totale:<div id="totale"></div>
+   
+    <button id="save"></div>
+
+    
+    <p id="feedback">
+<span>You've selected:</span> <span id="select-result">none</span>.
+</p>
+<div id="contentbox">
+ <ol class="selectable" id="content"><div >
+      
+        
+     </div>    
+  
+</ol>
+ 
+</div>
